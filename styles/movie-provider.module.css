@@ -1,8 +1,8 @@
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
     display: grid;
     padding: 10px;
     text-align: center;
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(228, 228, 228);
     border-radius: 20px;
 }
 
@@ -42,4 +42,11 @@
     margin: 20px;
     color: black;
     font-weight: lighter;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
 }

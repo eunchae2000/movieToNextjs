@@ -28,6 +28,7 @@
 .movie_movie__n6Ry2 a{
     text-align: center;
 }
+
 /*!******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/home.module.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************/
@@ -45,9 +46,9 @@
   \**************************************************************************************************************************************************************************************************************************************************************************/
 .movie-credit_container__LCPe6{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    gap: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    gap: 30px;
     width: 80%;
     margin: 0 auto;
 }
@@ -58,14 +59,14 @@
 
 .movie-credit_poster__5Ayeg{
     border-radius: 15px;
-    max-width: 50%;
+    max-width: 40%;
     place-self: center;
 }
 
 .movie-credit_info__emkg_{
-    font-size: 18px;
-    margin: auto;
-    line-height: 180%;
+    font-size: 17px;
+    margin-left: 20px;
+    line-height: 1.6;
 }
 
 .movie-credit_info__emkg_ p{
@@ -75,5 +76,42 @@
 
 .movie-credit_info__emkg_ h2{
     font-weight: lighter;
+}
+
+.movie-credit_title___CWaq{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/movie-info.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.movie-info_container__FB7p9{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.movie-info_poster__Ewjrh{
+    border-radius: 20px;
+    max-width: 70%;
+    place-self: center;
+}
+
+.movie-info_title__Rggks{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.movie-info_info__RVgwq{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
 }
 

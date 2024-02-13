@@ -16,7 +16,7 @@ interface IParams{
 export default function movieProviers({params: {id}}: IParams){
     return (
         <div>
-            <Suspense fallback={<h1>Loading movie credit</h1>}>
+            <Suspense fallback={<h1>Loading movie provider</h1>}>
                 <MovieProvider id={id} />
           </Suspense>
         </div>

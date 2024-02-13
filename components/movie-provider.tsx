@@ -1,6 +1,7 @@
 import { count } from "console";
 import { URL } from "../app/(home)/page";
 import style from "../styles/movie-provider.module.css"
+import { getMovie } from "./movie-info";
 
 export async function getProvider(id: string){
     const response = await fetch(`${URL}/${id}/providers`);
@@ -9,15 +10,18 @@ export async function getProvider(id: string){
 
 export default async function MovieProvider({id}:{id:string}){
     const providers = await getProvider(id);
+    const movie = await getMovie(id);
     return (
-        <div className={style.container}>
+        <div>
+            <h1 className={style.title}>📼 Link to provide {movie.title} 📀 </h1>
+            <div className={style.container}>
             {Object.values(providers).map((data) => {
                 const rent_array = data.rent[0];
                 const buy_array = data.buy[0];
                 const country = (data.link).slice(-2);
                 return (
                     <div className={style.box}>
-                        <h1>🌏 {country} 🌏</h1>
+                        <h1>🌏 {country} 🍿</h1>
                         <a href={data.link}>link to rent or buy</a>
                         <div className={style.content}>
                             <div className={style.item}>
@@ -35,5 +39,8 @@ export default async function MovieProvider({id}:{id:string}){
                 )
             })}
         </div>
+
+        </div>
+        
     )
 }

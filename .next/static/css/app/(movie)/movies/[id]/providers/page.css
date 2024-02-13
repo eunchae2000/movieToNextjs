@@ -28,27 +28,16 @@
 .movie_movie__n6Ry2 a{
     text-align: center;
 }
-/*!******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/home.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************/
-.home_container__STkGE{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 25px;
-    gap: 25px;
-    max-width: 90%;
-    width: 100%;
-    margin: 0 auto;
-}
+
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/movie-provider.module.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
 .movie-provider_container__AK6Kj{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     gap: 50px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -56,7 +45,7 @@
     display: grid;
     padding: 10px;
     text-align: center;
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(228, 228, 228);
     border-radius: 20px;
 }
 
@@ -88,5 +77,54 @@
     margin: 20px;
     color: black;
     font-weight: lighter;
+}
+
+.movie-provider_title__8ICoP{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/home.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.home_container__STkGE{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+    gap: 25px;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./styles/movie-info.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.movie-info_container__FB7p9{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.movie-info_poster__Ewjrh{
+    border-radius: 20px;
+    max-width: 70%;
+    place-self: center;
+}
+
+.movie-info_title__Rggks{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.movie-info_info__RVgwq{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
 }
 
