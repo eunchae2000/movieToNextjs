@@ -7,7 +7,7 @@ export async function getMovie(id: string){
     return response.json();
 }
 
-export default async function MovieInfo({ id} : {id:string}){
+export default async function MovieInfo({id} : {id:string}){
     const movie = await getMovie(id);
     return (
         <div className={styles.container}>
@@ -19,6 +19,7 @@ export default async function MovieInfo({ id} : {id:string}){
                 <h1 className={styles.title}>{movie.title}</h1>
                 <h3>⭐️ {movie.vote_average.toFixed()}</h3>
                 <p>{movie.overview}</p>
+                <a href={`/movies/${id}/credits`}>credits &rarr;</a>
                 <a href={movie.homepage} target={"_blank"}>Homepage &rarr;</a>
             </div>
         </div>
