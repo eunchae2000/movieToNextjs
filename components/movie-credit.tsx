@@ -9,6 +9,7 @@ export async function getCredit(id: string){
 
 export default async function MovieCredit({id}: {id:string}){
     const credits = await getCredit(id);
+    console.log(credits)
     return (
         <div className={style.container}>
             {credits.map((credit) => (
